@@ -12,6 +12,6 @@ Assuming [Homebrew](https://brew.sh) is installed:
 
 ## Usage
 
-Set a hotkey to transform selected text in place.
+The default hotkey to transform selected text in place is `Shift` + `⌘` + `'` (quotation mark), but you may override this in the workflow settings however you like.
 
 Or use the `sp {text}` command to transform the provided text and copy to clipboard.
