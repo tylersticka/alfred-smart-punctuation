@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>bundleid</key>
-	<string>com.tylersticka.smartypants</string>
+	<string>com.tylersticka.smartpunctuation</string>
 	<key>category</key>
 	<string>Tools</string>
 	<key>connections</key>
@@ -77,11 +77,11 @@
 	<key>createdby</key>
 	<string>Tyler Sticka</string>
 	<key>description</key>
-	<string>"Straight" → “Smart” Punctuation</string>
+	<string>"Straight" → “Smart” Quotes, Apostrophes &amp; More</string>
 	<key>disabled</key>
 	<false/>
 	<key>name</key>
-	<string>SmartyPants</string>
+	<string>Smart Punctuation</string>
 	<key>objects</key>
 	<array>
 		<dict>
@@ -208,7 +208,7 @@
 		</dict>
 	</array>
 	<key>readme</key>
-	<string># Alfred SmartyPants
+	<string># Alfred Smart Punctuation
 
 Convert "straight" punctuation marks into their “smart” variants with a hotkey or keyword using [SmartyPants](https://daringfireball.net/projects/smartypants/) and [html2text](https://gitlab.com/grobian/html2text).
 
@@ -218,7 +218,7 @@ Assuming [Homebrew](https://brew.sh) is installed:
 
 1. Install SmartyPants: `brew install smartypants`
 2. Install html2text: `brew install html2text`
-3. Download and install the Alfred workflow
+3. Download and install [the Alfred workflow](https://github.com/tylersticka/alfred-smart-punctuation/releases/latest/download/SmartPunctuation.alfredworkflow)
 
 ## Usage
 
@@ -272,11 +272,9 @@ Or use the `sp {text}` command to transform the provided text and copy to clipbo
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.0.0</string>
+	<string>1.1.0</string>
 	<key>webaddress</key>
-	<string>https://github.com/tylersticka/alfred-smartypants</string>
+	<string>https://github.com/tylersticka/alfred-smart-punctuation</string>
 </dict>
 </plist>
