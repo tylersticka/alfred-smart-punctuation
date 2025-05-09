@@ -113,7 +113,7 @@
 				<key>subtext</key>
 				<string>"Straight" → “Smart” Punctuation</string>
 				<key>text</key>
-				<string>SmartyPants</string>
+				<string>Smart Punctuation</string>
 				<key>withspace</key>
 				<true/>
 			</dict>
@@ -271,6 +271,8 @@ Or use the `sp {text}` command to transform the provided text and copy to clipbo
 		</dict>
 	</dict>
 	<key>userconfigurationconfig</key>
+	<array/>
+	<key>variablesdontexport</key>
 	<array/>
 	<key>version</key>
 	<string>1.1.0</string>
