@@ -12,6 +12,12 @@ Assuming [Homebrew](https://brew.sh) is installed:
 
 ## Usage
 
-The default hotkey to transform selected text in place is `Shift` + `⌘` + `'` (quotation mark), but you may override this in the workflow settings however you like.
+The default hotkey to transform selected text in place is Shift-Command-Apostrophe (`⇧⌘'`), but you may override this in the workflow settings however you like.
 
 Or use the `sp {text}` command to transform the provided text and copy to clipboard.
+
+| Feature             | Input             | Output            |
+| ------------------- | ----------------- | ----------------- |
+| Quotes, Apostrophes | "How's it going?" | “How’s it going?” |
+| Ellipses            | Hold on...        | Hold on…          |
+| Em Dashes           | Wait--what?!      | Wait—what?!       |

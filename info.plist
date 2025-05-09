@@ -222,9 +222,15 @@ Assuming [Homebrew](https://brew.sh) is installed:
 
 ## Usage
 
-The default hotkey to transform selected text in place is `Shift` + `⌘` + `'` (quotation mark), but you may override this in the workflow settings however you like.
+The default hotkey to transform selected text in place is Shift-Command-Apostrophe (`⇧⌘'`), but you may override this in the workflow settings however you like.
 
-Or use the `sp {text}` command to transform the provided text and copy to clipboard.</string>
+Or use the `sp {text}` command to transform the provided text and copy to clipboard.
+
+| Feature             | Input             | Output            |
+| ------------------- | ----------------- | ----------------- |
+| Quotes, Apostrophes | "How's it going?" | “How’s it going?” |
+| Ellipses            | Hold on...        | Hold on…          |
+| Em Dashes           | Wait--what?!      | Wait—what?!       |</string>
 	<key>uidata</key>
 	<dict>
 		<key>12CFF92D-F60D-4641-B77D-785FE128A57F</key>
@@ -272,10 +278,8 @@ Or use the `sp {text}` command to transform the provided text and copy to clipbo
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
-	<key>variablesdontexport</key>
-	<array/>
 	<key>version</key>
-	<string>1.1.0</string>
+	<string>1.1.1</string>
 	<key>webaddress</key>
 	<string>https://github.com/tylersticka/alfred-smart-punctuation</string>
 </dict>
