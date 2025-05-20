@@ -132,7 +132,7 @@
 				<key>escaping</key>
 				<integer>102</integer>
 				<key>script</key>
-				<string>smartypants &lt;&lt;&lt; $1 | html2text -utf8</string>
+				<string>smartypants &lt;&lt;&lt; $1 | perl -MHTML::Entities -pe 'decode_entities($_);'</string>
 				<key>scriptargtype</key>
 				<integer>1</integer>
 				<key>scriptfile</key>
@@ -210,15 +210,16 @@
 	<key>readme</key>
 	<string># Alfred Smart Punctuation
 
-Convert "straight" punctuation marks into their “smart” variants with a hotkey or keyword using [SmartyPants](https://daringfireball.net/projects/smartypants/) and [html2text](https://gitlab.com/grobian/html2text).
+Convert "straight" punctuation marks into their “smart” variants with a hotkey or keyword.
+
+Uses [SmartyPants](https://daringfireball.net/projects/smartypants/) for the conversion, followed by [a Perl command to decode HTML entities](https://stackoverflow.com/a/13161719).
 
 ## Installation
 
 Assuming [Homebrew](https://brew.sh) is installed:
 
 1. Install SmartyPants: `brew install smartypants`
-2. Install html2text: `brew install html2text`
-3. Download and install [the Alfred workflow](https://github.com/tylersticka/alfred-smart-punctuation/releases/latest/download/SmartPunctuation.alfredworkflow)
+2. Download and install [the Alfred workflow](https://github.com/tylersticka/alfred-smart-punctuation/releases/latest/download/SmartPunctuation.alfredworkflow)
 
 ## Usage
 
@@ -278,8 +279,10 @@ Or use the `sp {text}` command to transform the provided text and copy to clipbo
 	</dict>
 	<key>userconfigurationconfig</key>
 	<array/>
+	<key>variablesdontexport</key>
+	<array/>
 	<key>version</key>
-	<string>1.1.1</string>
+	<string>1.1.2</string>
 	<key>webaddress</key>
 	<string>https://github.com/tylersticka/alfred-smart-punctuation</string>
 </dict>

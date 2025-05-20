@@ -1,14 +1,15 @@
 # Alfred Smart Punctuation
 
-Convert "straight" punctuation marks into their “smart” variants with a hotkey or keyword using [SmartyPants](https://daringfireball.net/projects/smartypants/) and [html2text](https://gitlab.com/grobian/html2text).
+Convert "straight" punctuation marks into their “smart” variants with a hotkey or keyword.
+
+Uses [SmartyPants](https://daringfireball.net/projects/smartypants/) for the conversion, followed by [a Perl command to decode HTML entities](https://stackoverflow.com/a/13161719).
 
 ## Installation
 
 Assuming [Homebrew](https://brew.sh) is installed:
 
 1. Install SmartyPants: `brew install smartypants`
-2. Install html2text: `brew install html2text`
-3. Download and install [the Alfred workflow](https://github.com/tylersticka/alfred-smart-punctuation/releases/latest/download/SmartPunctuation.alfredworkflow)
+2. Download and install [the Alfred workflow](https://github.com/tylersticka/alfred-smart-punctuation/releases/latest/download/SmartPunctuation.alfredworkflow)
 
 ## Usage
 
